@@ -8,6 +8,8 @@ from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
 
 from mmdet.utils import setup_cache_size_limit_of_dynamo
+from mmdet.utils import register_all_modules
+register_all_modules()  # 关键修复：注册所有模块
 
 
 def parse_args():
